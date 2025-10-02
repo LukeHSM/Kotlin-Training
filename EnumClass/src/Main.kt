@@ -2,6 +2,21 @@
 *   Praticando com ENUM:
 *   Atributos built-in (name e ordinal)
 *   Atributos user-defined (ClientName e idade)
+*
+*   O resultado no console é:
+*
+*   """
+*   CLIENTE1 - 0: Andreia, 32 anos.
+    CLIENTE2 - 1: Bernardo, 53 anos.
+    CLIENTE3 - 2: Gustavo, 25 anos.
+    CLIENTE4 - 3: Laura, 48 anos.
+
+
+    O cliente Andreia tem 32 anos de idade.
+    O cliente Bernardo tem 53 anos de idade.
+    O cliente Gustavo tem 25 anos de idade.
+    O cliente Laura tem 48 anos de idade.
+    """
 */
 
 fun main() {
