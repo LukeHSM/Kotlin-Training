@@ -1,5 +1,6 @@
 fun main() {
-    val lista = readln().split(", ", " ", ",")
+    println("Digite os elementos da lista, separados por vírgulas:")
+    val lista = readln().split(", ", " ,", ",", " , ")
 
     while (true){
         println("""
@@ -7,6 +8,7 @@ fun main() {
             1 - Começa com...
             2 - Termina com...
             3 - No de caracteres
+            4 - Mostrar lista
         """.trimIndent())
 
         print("\n: ")
@@ -16,6 +18,7 @@ fun main() {
             1 -> comecaCom(lista)
             2 -> terminaCom(lista)
             3 -> numeroChars(lista)
+            4 -> mostrarLista(lista)
         }
     }
 }
@@ -42,4 +45,8 @@ fun numeroChars(lista: List<String>){
     val (comMatch, semMatch) = lista.partition { it.length >= quantia }
     println("Elementos com $quantia ou mais caracteres: ${comMatch.joinToString()}")
     println("Elementos com menos de $quantia caracteres: ${semMatch.joinToString()}")
+}
+
+fun mostrarLista(lista: List<String>){
+    println("\nElementos: ${lista.joinToString()}.")
 }
